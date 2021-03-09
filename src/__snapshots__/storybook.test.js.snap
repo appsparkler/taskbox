@@ -805,7 +805,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 6 (archived)"
+        value="Task 7 (archived)"
       />
     </div>
     <div

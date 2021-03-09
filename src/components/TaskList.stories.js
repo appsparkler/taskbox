@@ -38,7 +38,7 @@ WithAllTaskStates.args = {
   tasks: [
     ...Default.args.tasks.slice(0, 5),
     { ...TaskStories.Pinned.args.task, id: "6", title: "Task 6 (pinned)" },
-    { ...TaskStories.Archived.args.task, id: "7", title: "Task 6 (archived)" },
+    { ...TaskStories.Archived.args.task, id: "7", title: "Task 7 (archived)" },
   ],
 };
 
