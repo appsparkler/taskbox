@@ -9,6 +9,14 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
     onArchiveTask,
   };
 
+  const tasksInOrder = React.useMemo(() => {
+    return [
+      ...tasks.filter((task) => task.state === "TASK_PINNED"),
+      ...tasks.filter((task) => task.state === "TASK_INBOX"),
+      ...tasks.filter((task) => task.state === "TASK_ARCHIVED"),
+    ];
+  }, [tasks]);
+
   if (loading) {
     return (
       <div className="list-items">
@@ -28,7 +36,7 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
 
   return (
     <div className="list-items">
-      {tasks.map((task) => (
+      {tasksInOrder.map((task) => (
         <Task key={task.id} task={task} {...events} />
       ))}
     </div>

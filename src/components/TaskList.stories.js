@@ -25,6 +25,23 @@ WithPinnedTasks.args = {
   ],
 };
 
+export const WithArchivedTasks = Template.bind({});
+WithArchivedTasks.args = {
+  tasks: [
+    ...Default.args.tasks.slice(0, 5),
+    { ...TaskStories.Archived.args.task, id: "6", title: "Task 6 (archived)" },
+  ],
+};
+
+export const WithAllTaskStates = Template.bind({});
+WithAllTaskStates.args = {
+  tasks: [
+    ...Default.args.tasks.slice(0, 5),
+    { ...TaskStories.Pinned.args.task, id: "6", title: "Task 6 (pinned)" },
+    { ...TaskStories.Archived.args.task, id: "7", title: "Task 6 (archived)" },
+  ],
+};
+
 export const Loading = Template.bind({});
 Loading.args = {
   tasks: [],
