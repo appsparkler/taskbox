@@ -88,4 +88,4 @@ If you encounter an issue with the template, we encourage you to open an issue i
 
 - Arrow Functions instead of Function Literals
 - Story variable instead of export default
-- Added a separate component for Loading Row
+- Added a separate component for Loading Row & Empty Screen
