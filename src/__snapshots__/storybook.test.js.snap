@@ -1,5 +1,30 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Loading Row Default 1`] = `
+<div
+  className="loading-item"
+>
+  <span
+    className="glow-checkbox"
+  />
+  <span
+    className="glow-text"
+  >
+    <span>
+      Loading
+    </span>
+     
+    <span>
+      cool
+    </span>
+     
+    <span>
+      state
+    </span>
+  </span>
+</div>
+`;
+
 exports[`Storyshots Components/Task Archived 1`] = `
 <div
   className="list-item TASK_ARCHIVED"
