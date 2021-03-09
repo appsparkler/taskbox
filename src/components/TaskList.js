@@ -1,5 +1,6 @@
 import React from "react";
 import Task from "./Task";
+import LoadingRow from "./LoadingRow";
 
 const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   const events = {
@@ -8,7 +9,16 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   };
 
   if (loading) {
-    return <div className="list-items">loading</div>;
+    return (
+      <div className="list-items">
+        <LoadingRow />
+        <LoadingRow />
+        <LoadingRow />
+        <LoadingRow />
+        <LoadingRow />
+        <LoadingRow />
+      </div>
+    );
   }
 
   if (tasks.length === 0) {
