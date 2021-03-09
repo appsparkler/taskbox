@@ -1,6 +1,7 @@
 import React from "react";
 import Task from "./Task";
 import LoadingRow from "./LoadingRow";
+import EmptyScreen from "./EmptyScreen";
 
 const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   const events = {
@@ -22,7 +23,7 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   }
 
   if (tasks.length === 0) {
-    return <div className="list-items">empty</div>;
+    return <EmptyScreen />;
   }
 
   return (

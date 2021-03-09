@@ -1,5 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Components/Empty Screen Default 1`] = `
+<div
+  className="list-items"
+>
+  <div
+    className="wrapper-message"
+  >
+    <span
+      className="icon-check"
+    />
+    <div
+      className="title-message"
+    >
+      You have no tasks
+    </div>
+    <div
+      className="subtitle-message"
+    >
+      Sit back and relax
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Loading Row Default 1`] = `
 <div
   className="loading-item"
@@ -354,7 +378,23 @@ exports[`Storyshots Components/Task List Empty 1`] = `
 <div
   className="list-items"
 >
-  empty
+  <div
+    className="wrapper-message"
+  >
+    <span
+      className="icon-check"
+    />
+    <div
+      className="title-message"
+    >
+      You have no tasks
+    </div>
+    <div
+      className="subtitle-message"
+    >
+      Sit back and relax
+    </div>
+  </div>
 </div>
 `;
 
