@@ -24,6 +24,284 @@ exports[`Storyshots Components/Empty Screen Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Inbox Screen Default 1`] = `
+<div
+  className="page lists-show"
+>
+  <nav>
+    <h1
+      className="title-page"
+    >
+      <span
+        className="title-wrapper"
+      >
+        Taskbox
+      </span>
+    </h1>
+  </nav>
+  <div
+    className="list-items"
+  >
+    <div
+      className="list-item TASK_PINNED"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 5 (pinned)"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="list-item TASK_INBOX"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 1"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="list-item TASK_INBOX"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 2"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="list-item TASK_INBOX"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 3"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="list-item TASK_INBOX"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={false}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 4"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      >
+        <a
+          onClick={[Function]}
+        >
+          <span
+            className="icon-star"
+          />
+        </a>
+      </div>
+    </div>
+    <div
+      className="list-item TASK_ARCHIVED"
+    >
+      <label
+        className="checkbox"
+      >
+        <input
+          defaultChecked={true}
+          disabled={true}
+          name="checked"
+          type="checkbox"
+        />
+        <span
+          className="checkbox-custom"
+          onClick={[Function]}
+        />
+      </label>
+      <div
+        className="title"
+      >
+        <input
+          placeholder="Input title"
+          readOnly={true}
+          type="text"
+          value="Task 6 (archived)"
+        />
+      </div>
+      <div
+        className="actions"
+        onClick={[Function]}
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Inbox Screen Error 1`] = `
+<div
+  className="page lists-show"
+>
+  <div
+    className="wrapper-message"
+  >
+    <span
+      className="icon-face-sad"
+    />
+    <div
+      className="title-message"
+    >
+      Oh no!
+    </div>
+    <div
+      className="subtitle-message"
+    >
+      Something went wrong
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Loading Row Default 1`] = `
 <div
   className="loading-item"
@@ -565,7 +843,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 6 (pinned)"
+        value="Task 5 (pinned)"
       />
     </div>
     <div
@@ -742,46 +1020,6 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
     </div>
   </div>
   <div
-    className="list-item TASK_INBOX"
-  >
-    <label
-      className="checkbox"
-    >
-      <input
-        defaultChecked={false}
-        disabled={true}
-        name="checked"
-        type="checkbox"
-      />
-      <span
-        className="checkbox-custom"
-        onClick={[Function]}
-      />
-    </label>
-    <div
-      className="title"
-    >
-      <input
-        placeholder="Input title"
-        readOnly={true}
-        type="text"
-        value="Task 5"
-      />
-    </div>
-    <div
-      className="actions"
-      onClick={[Function]}
-    >
-      <a
-        onClick={[Function]}
-      >
-        <span
-          className="icon-star"
-        />
-      </a>
-    </div>
-  </div>
-  <div
     className="list-item TASK_ARCHIVED"
   >
     <label
@@ -805,7 +1043,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 7 (archived)"
+        value="Task 6 (archived)"
       />
     </div>
     <div

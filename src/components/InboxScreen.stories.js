@@ -19,12 +19,13 @@ const Template = (args) => <PureInboxScreen {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
-  error: false,
+  error: null,
 };
 
 export const Error = Template.bind({});
 Error.args = {
-  error: "Oh no!",
+  ...Default.args,
+  error: "Oops! Server is down!",
 };
 
 const Story = {
