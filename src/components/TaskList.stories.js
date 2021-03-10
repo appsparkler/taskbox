@@ -8,12 +8,12 @@ Template.args = {};
 export const Default = Template.bind({});
 Default.args = {
   tasks: [
-    { ...TaskStories.Default.args.task, id: "1", title: "Task #01" },
-    { ...TaskStories.Default.args.task, id: "2", title: "Task #02" },
-    { ...TaskStories.Default.args.task, id: "3", title: "Task #03" },
-    { ...TaskStories.Default.args.task, id: "4", title: "Task #04" },
-    { ...TaskStories.Default.args.task, id: "5", title: "Task #05" },
-    { ...TaskStories.Default.args.task, id: "6", title: "Task #06" },
+    { ...TaskStories.Default.args.task, id: "1", title: "Task 001" },
+    { ...TaskStories.Default.args.task, id: "2", title: "Task 002" },
+    { ...TaskStories.Default.args.task, id: "3", title: "Task 003" },
+    { ...TaskStories.Default.args.task, id: "4", title: "Task 004" },
+    { ...TaskStories.Default.args.task, id: "5", title: "Task 005" },
+    { ...TaskStories.Default.args.task, id: "6", title: "Task 006" },
   ],
 };
 
