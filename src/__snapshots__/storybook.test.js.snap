@@ -106,7 +106,7 @@ exports[`Storyshots Components/Inbox Screen Default 1`] = `
           placeholder="Input title"
           readOnly={true}
           type="text"
-          value="Task 1"
+          value="Task 01"
         />
       </div>
       <div
@@ -146,7 +146,7 @@ exports[`Storyshots Components/Inbox Screen Default 1`] = `
           placeholder="Input title"
           readOnly={true}
           type="text"
-          value="Task 2"
+          value="Task 02"
         />
       </div>
       <div
@@ -186,7 +186,7 @@ exports[`Storyshots Components/Inbox Screen Default 1`] = `
           placeholder="Input title"
           readOnly={true}
           type="text"
-          value="Task 3"
+          value="Task 03"
         />
       </div>
       <div
@@ -226,7 +226,7 @@ exports[`Storyshots Components/Inbox Screen Default 1`] = `
           placeholder="Input title"
           readOnly={true}
           type="text"
-          value="Task 4"
+          value="Task 04"
         />
       </div>
       <div
@@ -433,7 +433,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 1"
+        value="Task 01"
       />
     </div>
     <div
@@ -473,7 +473,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 2"
+        value="Task 02"
       />
     </div>
     <div
@@ -513,7 +513,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 3"
+        value="Task 03"
       />
     </div>
     <div
@@ -553,7 +553,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 4"
+        value="Task 04"
       />
     </div>
     <div
@@ -593,7 +593,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 5"
+        value="Task 05"
       />
     </div>
     <div
@@ -633,7 +633,7 @@ exports[`Storyshots Components/Task List Default 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 6"
+        value="Task 06"
       />
     </div>
     <div
@@ -883,7 +883,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 1"
+        value="Task 01"
       />
     </div>
     <div
@@ -923,7 +923,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 2"
+        value="Task 02"
       />
     </div>
     <div
@@ -963,7 +963,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 3"
+        value="Task 03"
       />
     </div>
     <div
@@ -1003,7 +1003,7 @@ exports[`Storyshots Components/Task List With All Task States 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 4"
+        value="Task 04"
       />
     </div>
     <div
@@ -1082,7 +1082,7 @@ exports[`Storyshots Components/Task List With Archived Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 1"
+        value="Task 01"
       />
     </div>
     <div
@@ -1122,7 +1122,7 @@ exports[`Storyshots Components/Task List With Archived Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 2"
+        value="Task 02"
       />
     </div>
     <div
@@ -1162,7 +1162,7 @@ exports[`Storyshots Components/Task List With Archived Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 3"
+        value="Task 03"
       />
     </div>
     <div
@@ -1202,7 +1202,7 @@ exports[`Storyshots Components/Task List With Archived Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 4"
+        value="Task 04"
       />
     </div>
     <div
@@ -1242,7 +1242,7 @@ exports[`Storyshots Components/Task List With Archived Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 5"
+        value="Task 05"
       />
     </div>
     <div
@@ -1361,7 +1361,7 @@ exports[`Storyshots Components/Task List With Pinned Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 1"
+        value="Task 01"
       />
     </div>
     <div
@@ -1401,7 +1401,7 @@ exports[`Storyshots Components/Task List With Pinned Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 2"
+        value="Task 02"
       />
     </div>
     <div
@@ -1441,7 +1441,7 @@ exports[`Storyshots Components/Task List With Pinned Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 3"
+        value="Task 03"
       />
     </div>
     <div
@@ -1481,7 +1481,7 @@ exports[`Storyshots Components/Task List With Pinned Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 4"
+        value="Task 04"
       />
     </div>
     <div
@@ -1521,7 +1521,7 @@ exports[`Storyshots Components/Task List With Pinned Tasks 1`] = `
         placeholder="Input title"
         readOnly={true}
         type="text"
-        value="Task 5"
+        value="Task 05"
       />
     </div>
     <div
