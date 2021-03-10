@@ -1,21 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { connect } from "react-redux";
 import Task from "./Task";
 import LoadingRow from "./LoadingRow";
 import EmptyScreen from "./EmptyScreen";
+import { archiveTask, pinTask } from "../lib/redux";
 
-const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
+export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   const events = {
     onPinTask,
     onArchiveTask,
   };
 
   const tasksInOrder = React.useMemo(() => {
-    return [
-      ...tasks.filter((task) => task.state === "TASK_PINNED"),
-      ...tasks.filter((task) => task.state === "TASK_INBOX"),
-      ...tasks.filter((task) => task.state === "TASK_ARCHIVED"),
-    ];
+    return tasks.sort((task) => {
+      if (task.state === "TASK_PINNED") return -1;
+      if (task.state === "TASK_INBOX") return 0;
+      if (task.state === "TASK_ARCHIVED") return 1;
+      return 0.4;
+    });
   }, [tasks]);
 
   if (loading) {
@@ -44,7 +47,7 @@ const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   );
 };
 
-TaskList.propTypes = {
+PureTaskList.propTypes = {
   /** Checks if it's in loading state */
   loading: PropTypes.bool,
   /** The list of tasks */
@@ -55,8 +58,18 @@ TaskList.propTypes = {
   onArchiveTask: PropTypes.func,
 };
 
-TaskList.defaultProps = {
+PureTaskList.defaultProps = {
   loading: false,
 };
 
-export default TaskList;
+export default connect(
+  ({ tasks }) => ({
+    tasks: tasks.filter(
+      (t) => t.state === "TASK_INBOX" || t.state === "TASK_PINNED"
+    ),
+  }),
+  (dispatch) => ({
+    onArchiveTask: (id) => dispatch(archiveTask(id)),
+    onPinTask: (id) => dispatch(pinTask(id)),
+  })
+)(PureTaskList);

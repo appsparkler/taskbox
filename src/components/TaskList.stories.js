@@ -1,8 +1,8 @@
 import React from "react";
-import TaskList from "./TaskList";
+import { PureTaskList } from "./TaskList";
 import * as TaskStories from "./Task.stories";
 
-const Template = (args) => <TaskList {...args} />;
+const Template = (args) => <PureTaskList {...args} />;
 Template.args = {};
 
 export const Default = Template.bind({});
@@ -36,9 +36,9 @@ WithArchivedTasks.args = {
 export const WithAllTaskStates = Template.bind({});
 WithAllTaskStates.args = {
   tasks: [
-    ...Default.args.tasks.slice(0, 5),
-    { ...TaskStories.Pinned.args.task, id: "6", title: "Task 6 (pinned)" },
-    { ...TaskStories.Archived.args.task, id: "7", title: "Task 7 (archived)" },
+    ...Default.args.tasks.slice(0, 4),
+    { ...TaskStories.Pinned.args.task, id: "5", title: "Task 5 (pinned)" },
+    { ...TaskStories.Archived.args.task, id: "6", title: "Task 6 (archived)" },
   ],
 };
 
@@ -56,7 +56,7 @@ Empty.args = {
 
 const Story = {
   title: "Components/Task List",
-  component: TaskList,
+  component: PureTaskList,
 };
 
 export default Story;
