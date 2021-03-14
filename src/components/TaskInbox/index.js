@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import TaskList from "./TaskList";
 
-export const TaskInbox = ({ error }) => {
+export const TaskInbox = ({ error, tasks, loading }) => {
   if (error) {
     return (
       <div className="page lists-show">
@@ -26,7 +26,7 @@ export const TaskInbox = ({ error }) => {
           <span className="title-wrapper">Taskbox</span>
         </h1>
       </nav>
-      <TaskList />
+      <TaskList tasks={tasks} loading={loading} />
     </div>
   );
 };

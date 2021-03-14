@@ -6,7 +6,7 @@ import EmptyScreen from "./EmptyScreen";
 import { archiveTask, pinTask } from "../../../lib/redux";
 import LoadingRows from './LoadingRows'
 
-export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
+export const TaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   const events = {
     onPinTask,
     onArchiveTask,
@@ -40,7 +40,7 @@ export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   );
 };
 
-PureTaskList.propTypes = {
+TaskList.propTypes = {
   /** Checks if it's in loading state */
   loading: PropTypes.bool,
   /** The list of tasks */
@@ -51,17 +51,8 @@ PureTaskList.propTypes = {
   onArchiveTask: PropTypes.func,
 };
 
-PureTaskList.defaultProps = {
+TaskList.defaultProps = {
   loading: false,
 };
 
-export default connect(
-  ({ tasks, loading }) => ({
-    tasks,
-    loading,
-  }),
-  (dispatch) => ({
-    onArchiveTask: (id) => dispatch(archiveTask(id)),
-    onPinTask: (id) => dispatch(pinTask(id)),
-  })
-)(PureTaskList);
+export default TaskList

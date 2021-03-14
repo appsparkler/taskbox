@@ -1,5 +1,5 @@
 import React from "react";
-import { PureTaskList } from "./index";
+import PureTaskList from "./index";
 import * as TaskStories from "./Task/index.stories";
 
 const Template = (args) => <PureTaskList {...args} />;
@@ -33,8 +33,8 @@ WithArchivedTasks.args = {
   ],
 };
 
-export const WithAllTaskStates = Template.bind({});
-WithAllTaskStates.args = {
+export const WithAllTaskTypes = Template.bind({});
+WithAllTaskTypes.args = {
   tasks: [
     ...Default.args.tasks.slice(0, 4),
     { ...TaskStories.Pinned.args.task, id: "5", title: "Task 5 (pinned)" },
