@@ -1,9 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { connect } from "react-redux";
 import TaskList from "./TaskList";
 
-export const PureInboxScreen = ({ error }) => {
+export const TaskInbox = ({ error }) => {
   if (error) {
     return (
       <div className="page lists-show">
@@ -32,13 +31,13 @@ export const PureInboxScreen = ({ error }) => {
   );
 };
 
-PureInboxScreen.propTypes = {
+TaskInbox.propTypes = {
   /** The error message */
   error: PropTypes.string,
 };
 
-PureInboxScreen.defaultProps = {
+TaskInbox.defaultProps = {
   error: null,
 };
 
-export default connect(({ error }) => ({ error }))(PureInboxScreen);
+export default TaskInbox
