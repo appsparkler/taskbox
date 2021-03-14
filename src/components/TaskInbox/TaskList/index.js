@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import Task from "./Task";
-import LoadingRow from "./LoadingRow";
 import EmptyScreen from "./EmptyScreen";
 import { archiveTask, pinTask } from "../../../lib/redux";
+import LoadingRows from './LoadingRows'
 
 export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
   const events = {
@@ -23,14 +23,7 @@ export const PureTaskList = ({ loading, tasks, onPinTask, onArchiveTask }) => {
 
   if (loading) {
     return (
-      <div className="list-items">
-        <LoadingRow />
-        <LoadingRow />
-        <LoadingRow />
-        <LoadingRow />
-        <LoadingRow />
-        <LoadingRow />
-      </div>
+      <LoadingRows />
     );
   }
 
