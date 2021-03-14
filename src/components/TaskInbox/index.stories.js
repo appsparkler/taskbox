@@ -8,7 +8,7 @@ const store = {
   getState: () => {
     return {
       tasks: TaskListStories.WithAllTaskStates.args.tasks,
-      loading: false,
+      loading: true,
     };
   },
   subscribe: () => 0,
@@ -22,10 +22,15 @@ Default.args = {
   error: null,
 };
 
+export const Loading = Template.bind({});
+Default.args = {
+  error: null,
+};
+
 export const Error = Template.bind({});
 Error.args = {
   ...Default.args,
-  error: "Oops! Server is down!",
+  error: "Server is down!",
 };
 
 const Story = {

@@ -7,7 +7,7 @@ export const Default = Template.bind({});
 Default.args = {};
 
 const Story = {
-  title: "Pages/Task-Inbox/Loading Row",
+  title: "Pages/Task-Inbox/Task List/Loading Rows/Loading Row",
   component: LoadingRow,
 };
 
