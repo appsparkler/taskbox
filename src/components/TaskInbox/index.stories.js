@@ -1,6 +1,5 @@
 import React from "react";
 import TaskInbox from "./index";
-import TaskList from "./TaskList";
 import * as TaskListStories from "./TaskList/index.stories";
 
 const Template = args => <TaskInbox {...args} />
@@ -9,7 +8,7 @@ export const Loading = Template.bind({});
 Loading.args = {
   loading: true,
   tasks: TaskListStories.Default.args.tasks,
-  error: false
+  error: null
 }
 
 export const LoadedWithTasks = Template.bind({});
@@ -22,7 +21,7 @@ LoadedWithTasks.args = {
 export const LoadedCompletedTasks = Template.bind({});
 LoadedCompletedTasks.args = {
   ...Loading.args,
-  tasks: TaskListStories.WithAllTaskTypes.args.tasks,
+  tasks: [],
   loading: false
 }
 
@@ -33,7 +32,7 @@ LoadingError.args = {
 }
 
 const Story = {
-  title: "Pages/Task Inbox/Pure",
+  title: "Pages/Task Inbox",
   component: TaskInbox,
 };
 
