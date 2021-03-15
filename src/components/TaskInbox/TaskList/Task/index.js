@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
   return (
-    <div className={`list-item ${state}`}>
+    <div className={`list-item ${state}`} style={{background: 'red'}}>
       <label className="checkbox">
         <input
           type="checkbox"
