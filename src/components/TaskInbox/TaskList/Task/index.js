@@ -15,10 +15,12 @@ const Task = ({ task: { id, title, state }, onArchiveTask, onPinTask }) => {
       </label>
       <div className="title">
         <input
+          title={title}
           type="text"
           value={title}
           readOnly={true}
           placeholder="Input title"
+          style={{textOverflow: 'ellipsis'}}
         />
       </div>
 
