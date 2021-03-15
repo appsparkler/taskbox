@@ -1,6 +1,45 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Pages/Task Inbox Default 1`] = `
+exports[`Storyshots Pages/Task Inbox Loaded Completed Tasks 1`] = `
+<div
+  className="page lists-show"
+>
+  <nav>
+    <h1
+      className="title-page"
+    >
+      <span
+        className="title-wrapper"
+      >
+        Taskbox
+      </span>
+    </h1>
+  </nav>
+  <div
+    className="list-items"
+  >
+    <div
+      className="wrapper-message"
+    >
+      <span
+        className="icon-check"
+      />
+      <div
+        className="title-message"
+      >
+        You have no tasks
+      </div>
+      <div
+        className="subtitle-message"
+      >
+        Sit back and relax
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Task Inbox Loaded With Tasks 1`] = `
 <div
   className="page lists-show"
 >
@@ -254,10 +293,175 @@ exports[`Storyshots Pages/Task Inbox Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Pages/Task Inbox Error 1`] = `
+exports[`Storyshots Pages/Task Inbox Loading 1`] = `
 <div
   className="page lists-show"
 >
+  <nav>
+    <h1
+      className="title-page"
+    >
+      <span
+        className="title-wrapper"
+      >
+        Taskbox
+      </span>
+    </h1>
+  </nav>
+  <div
+    className="list-items"
+  >
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+    <div
+      className="loading-item"
+    >
+      <span
+        className="glow-checkbox"
+      />
+      <span
+        className="glow-text"
+      >
+        <span>
+          Loading
+        </span>
+         
+        <span>
+          cool
+        </span>
+         
+        <span>
+          state
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Task Inbox Loading Error 1`] = `
+<div
+  className="page lists-show"
+>
+  <nav>
+    <h1
+      className="title-page"
+    >
+      <span
+        className="title-wrapper"
+      >
+        Taskbox
+      </span>
+    </h1>
+  </nav>
   <div
     className="wrapper-message"
   >
@@ -272,34 +476,9 @@ exports[`Storyshots Pages/Task Inbox Error 1`] = `
     <div
       className="subtitle-message"
     >
-      Something went wrong
+      Server is down.  Please re-try later.
     </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Pages/Task-Inbox/Loading Row Default 1`] = `
-<div
-  className="loading-item"
->
-  <span
-    className="glow-checkbox"
-  />
-  <span
-    className="glow-text"
-  >
-    <span>
-      Loading
-    </span>
-     
-    <span>
-      cool
-    </span>
-     
-    <span>
-      state
-    </span>
-  </span>
 </div>
 `;
 
@@ -713,7 +892,7 @@ exports[`Storyshots Pages/Task-Inbox/Task List Loading 1`] = `
 </div>
 `;
 
-exports[`Storyshots Pages/Task-Inbox/Task List With All Task States 1`] = `
+exports[`Storyshots Pages/Task-Inbox/Task List With All Task Types 1`] = `
 <div
   className="list-items"
 >
@@ -1459,6 +1638,170 @@ exports[`Storyshots Pages/Task-Inbox/Task List/Empty Screen Default 1`] = `
       Sit back and relax
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Task-Inbox/Task List/Loading Rows Default 1`] = `
+<div
+  className="list-items"
+>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+  <div
+    className="loading-item"
+  >
+    <span
+      className="glow-checkbox"
+    />
+    <span
+      className="glow-text"
+    >
+      <span>
+        Loading
+      </span>
+       
+      <span>
+        cool
+      </span>
+       
+      <span>
+        state
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Pages/Task-Inbox/Task List/Loading Rows/Loading Row Default 1`] = `
+<div
+  className="loading-item"
+>
+  <span
+    className="glow-checkbox"
+  />
+  <span
+    className="glow-text"
+  >
+    <span>
+      Loading
+    </span>
+     
+    <span>
+      cool
+    </span>
+     
+    <span>
+      state
+    </span>
+  </span>
 </div>
 `;
 
